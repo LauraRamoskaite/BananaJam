@@ -1,0 +1,10 @@
+1) Install packages (Requests, ?)
+2) Import modules (random, ?)
+3) Function: Generate random pokeID
+4) Function: Get pokemon through API based on pokeID
+5) Create a dictionary (Name, ID, Height, Weight)
+6) Function: Generate 2 random pokemons, one for the player and one for the opponent
+7) Function: Ask user to select the stat
+8) Function: Compare the stats
+9) Fuction: Decide who wins
+10) Bring all the functiones together
