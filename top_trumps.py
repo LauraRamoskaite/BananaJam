@@ -23,4 +23,6 @@ def random_pokemon():
 #         'weight': pokemon['weight'],
 #         }
 
-print(random_pokemon())
+print(random_pokemon())print(random_pokemon())
+
+#hello world
