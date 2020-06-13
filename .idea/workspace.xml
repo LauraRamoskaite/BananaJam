@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a1065a6-145f-4444-ae90-a93a84a99102" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Process.txt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Process.txt.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/top_trumps.py" beforeDir="false" afterPath="$PROJECT_DIR$/top_trumps.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +20,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1d8pefgWC14dn1Jg8xQ0Lgmhbxf" />
   <component name="ProjectViewState">
@@ -71,25 +73,37 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1592076829955">
+    <state x="259" y="0" key="CommitChangelistDialog2" timestamp="1592086036233">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592076829955" />
-    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1592076829951">
+    <state x="259" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1592086036233" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1592078883994">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592076829951" />
-    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1592076829951">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1592078883994" />
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1592086015559">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592076829951" />
-    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1592076829955">
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592086015559" />
+    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1592086015559">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592076829955" />
+    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592086015559" />
+    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1592086015559">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592086015559" />
+    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1592086015559">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592086015559" />
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1592074361066">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1592074361066" />
+    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592080241682">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1592080241682" />
   </component>
 </project>
