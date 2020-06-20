@@ -1,6 +1,10 @@
 #hi
 # Top Trumps project
 
+#Function to ask the player how many rounds they want to play
+number_of_rounds = input ('How many rounds do you want to play? ')
+print('Lets start round no. 1 of ' + number_of_rounds)
+
 import requests
 
 import random
