@@ -5,7 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/BananaJam.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BananaJam.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/top_trumps.py" beforeDir="false" afterPath="$PROJECT_DIR$/top_trumps.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Process.txt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Process.txt.txt" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +38,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< Updated upstream
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> Stashed changes
   </component>
   <component name="RunManager" selected="Python.top_trumps">
     <configuration name="if operator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -117,6 +125,7 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1592078883994" />
+<<<<<<< Updated upstream
     <state width="1419" height="210" key="GridCell.Tab.0.bottom" timestamp="1592673336256">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -170,5 +179,31 @@
     <state x="506" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.813@0.23.1440.813" timestamp="1592671774444" />
     <state x="506" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.814@0.23.1440.814" timestamp="1592423154071" />
     <state x="506" y="333" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816@0.23.1440.816" timestamp="1592417657483" />
+=======
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1592086183755">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592086183755" />
+    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1592086183755">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592086183755" />
+    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1592086183755">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592086183755" />
+    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1592086183755">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592086183755" />
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1592751569566">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1592751569566" />
+    <state x="536" y="219" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592751651176">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="536" y="219" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1592751651176" />
+>>>>>>> Stashed changes
   </component>
 </project>
