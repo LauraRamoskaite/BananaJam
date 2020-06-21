@@ -16,6 +16,9 @@ def random_pokemon ():
         'id': pokemon['id'],
         'height': pokemon['height'],
         'weight': pokemon['weight'],
+        'moves': len(pokemon['moves']),
+        'exp': pokemon['base_experience'],
+        'abilities': len(pokemon['abilities']),
     }
 
 outcome_list = []
@@ -26,7 +29,7 @@ def game_round ():
 
     my_pokemon = random_pokemon()
     print('You were given {}'.format(my_pokemon['name']))
-    stat_choice = input('Which stat do you want to use? (id, height, weight) ')
+    stat_choice = input('Which stat do you want to use? (id, height, weight, moves, exp, abilities) ')
 
     opponent_pokemon = random_pokemon()
     print('The opponent chose {}'.format(opponent_pokemon['name']))
@@ -69,7 +72,8 @@ else:
 
 with open('game_outcomes.txt', 'w+') as text_file:
     results = str(outcome_list)
-    text_file.write(results)
+    message = f"Your game outcomes were as follows:\n{results}\nYou {number_of_wins} : {number_of_losses} Your Opponent"
+    text_file.write(message)
     text_file.close()
 
 print("You can view your results in game_outcomes.txt file.")
