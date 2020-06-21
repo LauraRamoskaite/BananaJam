@@ -1,8 +1,8 @@
 1) Install packages (Requests, ?)
 2) Import modules (random, ?) - Done
 3) Function: Generate random pokeID - Done - Could be improved by by setting upper limit as len(pokemon[]) instead of hard coding but would reduce processing speed
-4) Function: Get pokemon through API based on pokeID
-5) Create a dictionary (Name, ID, Height, Weight)
+4) Function: Get pokemon through API based on pokeID - Done
+5) Create a dictionary (Name, ID, Height, Weight) - Done
 6) Function: Generate 2 random pokemons, one for the player and one for the opponent
 7) Function: Ask user to select the stat
 8) Function: Compare the stats
