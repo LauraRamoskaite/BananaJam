@@ -1,1 +1,3 @@
+Your game outcomes were as follows:
 ['win', 'loss']
+You 1 : 1 Your Opponent
