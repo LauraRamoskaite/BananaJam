@@ -29,13 +29,58 @@ def game_round ():
 
     my_pokemon = random_pokemon()
     print('You were given {}'.format(my_pokemon['name']))
-    stat_choice = input('Which stat do you want to use? (id, height, weight, moves, exp, abilities) ')
+    stat_choice = int(input('Which stat do you want to use? (1: id, 2: height, 3: weight, 4: moves, 5: exp, 6: abilities)? Type 1-6 to choose your stat. '))
 
+#if someone can please make it show stat: value of the stat
+    def my_pokemon_stat():
+
+        if stat_choice == 1:
+            my_stat = 'id'
+        elif stat_choice == 2:
+            my_stat = 'height'
+        elif stat_choice == 3:
+            my_stat = 'weight'
+        elif stat_choice == 4:
+            my_stat = 'moves'
+        elif stat_choice == 5:
+            my_stat = 'exp'
+        else:
+            my_stat = 'abilities'
+
+        return my_stat
+
+    pokemon_stat = my_pokemon_stat()
+
+    print('You chose {}, '.format(my_pokemon['name']) + '{}'.format(pokemon_stat))
+
+#The computer to pick a random stat:
     opponent_pokemon = random_pokemon()
-    print('The opponent chose {}'.format(opponent_pokemon['name']))
+
+    def random_opponent_stat():
+        opponent_choice = random.randint(1, 6)
+
+        if opponent_choice == 1:
+            stat = 'id'
+        elif opponent_choice == 2:
+            stat = 'height'
+        elif opponent_choice == 3:
+            stat = 'weight'
+        elif opponent_choice == 4:
+            stat = 'moves'
+        elif opponent_choice == 5:
+            stat = 'exp'
+        else:
+            stat = 'abilities'
+
+        return stat
+
+    computer_choice = opponent_pokemon
+    opponent_stat = random_opponent_stat()
+
+    print('The opponent chose {}, '.format(opponent_pokemon['name']) + '{}'.format(opponent_stat))
 
     my_stat = my_pokemon[stat_choice]
-    opponent_stat = opponent_pokemon[stat_choice]
+    opponent_stat = opponent_choice
 
     if my_stat > opponent_stat:
         print('You Win!')
