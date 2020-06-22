@@ -5,94 +5,87 @@ import requests
 # Input variable to ask the player how many rounds they want to play
 number_of_rounds = int(input('How many rounds do you want to play? Please enter a whole number. '))
 
-def random_pokemon ():
-    pokemon_number = random.randint(1, 151)
-    url = 'https://pokeapi.co/api/v2/pokemon/{}/'.format(pokemon_number)
-    response = requests.get(url)
-    pokemon = response.json()
+# Function that generates X random pokemons and stores their respective stats
+def random_pokemon( number_of_pokemon ):
 
-    return {
-        'name': pokemon['name'],
-        'id': pokemon['id'],
-        'height': pokemon['height'],
-        'weight': pokemon['weight'],
-        'moves': len(pokemon['moves']),
-        'experience': pokemon['base_experience'],
-        'abilities': len(pokemon['abilities']),
-    }
+    # Lists that store the information about 4 random pokemons
+    pokemon_number = []
+    urls = []
+    responses = []
+    pokemon = []
+    dictList = []
 
+
+    # Generating X random numbers
+    # Matching the X numbers to the corresponding URL in the Pokemon API
+    # Pulling the correct URL for each random Pokemon
+    # Retrieving all the available stats for those X random Pokemons
+    # Putting all the stats that you're interested in about those X random Pokemons in a dictionary
+
+    for i in range(0, number_of_pokemon):
+        abc = random.randint(1, 151)
+        pokemon_number.append(abc)
+        urls.append('https://pokeapi.co/api/v2/pokemon/{}/'.format(pokemon_number[i]))
+        responses.append(requests.get(urls[i]))
+        pokemon.append(responses[i].json())
+        entry = {'name': pokemon[i]['name'],                    # name
+                 'id': pokemon[i]['id'],                        # id
+                 'height': pokemon[i]['height'],                # height
+                 'weight': pokemon[i]['weight'],                # weight
+                 'moves': len(pokemon[i]['moves']),             # moves
+                 'experience': pokemon[i]['base_experience'],   # experience
+                 'abilities': len(pokemon[i]['abilities']),     # abilities
+                 }
+        dictList.append(entry)
+    return dictList
+
+
+# Variables that store the outcomes of each game round
 outcome_list = []
 number_of_wins = 0
 number_of_losses = 0
 
+
+# Function that runs the game for 1 round
 def game_round ():
 
-    my_pokemon = random_pokemon()
-    print('You were given {}'.format(my_pokemon['name']))
-    stat_choice = int(input('Which stat do you want to use? (1: id, 2: height, 3: weight, 4: moves, 5: experience, 6: abilities)? Type 1-6 to choose your stat. '))
+    # Selecting one of the 4 random pokemons
+    my_pokemons = random_pokemon(4)
+    poke_names = []
+    for j in range(0, 4):
+        entry = my_pokemons[j]['name']
+        poke_names.append(entry)
 
-#if someone can please make it show stat: value of the stat
+    print('You were given the following Pokemons - {}'.format(poke_names))
+    poke_choice = input('Which one do you want to use? ')
+    print('You have chosen {}'.format(poke_choice))
 
-    pokemon_stat = {
-        1: 'id',
-        2: 'height',
-        3: 'weight',
-        4: 'moves',
-        5: 'experience',
-        6: 'abilities',
+
+    input_translator = {
+        '1': 'id',
+        '2': 'height',
+        '3': 'weight',
+        '4': 'moves',
+        '5': 'experience',
+        '6': 'abilities',
     }
 
-    # def my_pokemon_stat():
-    #
-    #     if stat_choice == 1:
-    #         my_stat = 'id'
-    #     elif stat_choice == 2:
-    #         my_stat = 'height'
-    #     elif stat_choice == 3:
-    #         my_stat = 'weight'
-    #     elif stat_choice == 4:
-    #         my_stat = 'moves'
-    #     elif stat_choice == 5:
-    #         my_stat = 'experience'
-    #     else:
-    #         my_stat = 'abilities'
-    #
-    #     return my_stat
 
- #   pokemon_stat = my_pokemon_stat()
+    # Lets you choose a stat to face the opponent and matches it to the corresponding Pokemon in the dictionary
+    for k in my_pokemons:
+        if k['name'] == poke_choice:
+            k_index = my_pokemons.index(k)
+            break
+    stat_choice = input('Which stat do you want to use? (1: id, 2: height, 3: weight, 4: moves, 5: experience, 6: abilities)? Type 1-6 to choose your stat. ')
+    my_stat = my_pokemons[k_index][ input_translator[stat_choice] ]
 
-    print(f"You chose {my_pokemon['name']}, {pokemon_stat[stat_choice]}")
 
-#The computer to pick a random stat:
-    opponent_pokemon = random_pokemon()
-    opponent_stat_choice = random.randint(1, 6)
-    opponent_stat = pokemon_stat[opponent_stat_choice]
+    opponent_pokemon = random_pokemon(1)[0]
+    opponent_stat = opponent_pokemon[ input_translator[stat_choice] ] # same stat used for both players
 
-    # def random_opponent_stat():
-    #     opponent_choice = random.randint(1, 6)
-    #
-    #     if opponent_choice == 1:
-    #         stat = 'id'
-    #     elif opponent_choice == 2:
-    #         stat = 'height'
-    #     elif opponent_choice == 3:
-    #         stat = 'weight'
-    #     elif opponent_choice == 4:
-    #         stat = 'moves'
-    #     elif opponent_choice == 5:
-    #         stat = 'experience'
-    #     else:
-    #         stat = 'abilities'
-    #
-    #     return stat
+    print(f"{poke_choice}'s {input_translator[stat_choice]} value is {my_stat}.")
+    print(f"The opponent chose {opponent_pokemon['name']}. {opponent_pokemon['name']}'s {input_translator[stat_choice]} value is {opponent_stat}.")
 
-#    computer_choice = opponent_pokemon
-#    opponent_stat = random_opponent_stat()
-
-    print(f"The opponent chose {opponent_pokemon['name']}, {opponent_stat}")
-
-    my_stat = pokemon_stat[stat_choice]
-#    opponent_stat = opponent_choice
 
     if my_stat > opponent_stat:
         print('You Win!')
