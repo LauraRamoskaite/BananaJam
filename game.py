@@ -56,18 +56,17 @@ def game_round ():
 #The computer to pick a random stat:
     opponent_pokemon = random_pokemon()
 
-    def random_opponent_stat():
-        opponent_choice = random.randint(1, 6)
+    def opponent_stat():
 
-        if opponent_choice == 1:
+        if stat_choice == 1:
             stat = 'id'
-        elif opponent_choice == 2:
+        elif stat_choice == 2:
             stat = 'height'
-        elif opponent_choice == 3:
+        elif stat_choice == 3:
             stat = 'weight'
-        elif opponent_choice == 4:
+        elif stat_choice == 4:
             stat = 'moves'
-        elif opponent_choice == 5:
+        elif stat_choice == 5:
             stat = 'exp'
         else:
             stat = 'abilities'
@@ -75,9 +74,9 @@ def game_round ():
         return stat
 
     computer_choice = opponent_pokemon
-    opponent_stat = random_opponent_stat()
+    computer_stat = opponent_stat()
 
-    print('The opponent chose {}, '.format(opponent_pokemon['name']) + '{}'.format(opponent_stat))
+    print('The opponent chose {}, '.format(opponent_pokemon['name']) + '{}'.format(computer_stat))
 
     my_stat = my_pokemon[stat_choice]
     opponent_stat = opponent_choice
